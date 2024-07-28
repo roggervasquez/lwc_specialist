@@ -6,7 +6,7 @@
     background-size: cover;
     border-radius: 5px;
   }
-  .selected {
+  .tile-wrapper selected {
     border: 3px solid rgb(0, 95, 178);
     border-radius: 5px;
   }
@@ -14,4 +14,35 @@
     cursor: pointer;
     padding: 5px;
   }
+
+  .lower-third {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.lower-third h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lower-third h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lower-third div {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
   
