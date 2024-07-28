@@ -3,7 +3,7 @@
       <!-- Top -->
       <lightning-layout-item size="12">
         <lightning-card title="Find a Boat">
-          <!-- New Boat button goes here -->
+          <lightning-button label="New Boat" variant="brand" title="New Boat" onclick={createNewBoat}></lightning-button>
           <p class="slds-var-p-horizontal_small">
             <!-- boatSearchForm component goes here -->
           </p>
@@ -11,7 +11,9 @@
       </lightning-layout-item>
       <!-- Bottom -->
       <lightning-layout-item size="12" class="slds-p-top_small slds-is-relative">
-        <!-- Spinner goes here -->
+        <template if:true={isLoading}>
+           <lightning-spinner alternative-text="Loading"> </lightning-spinner>
+        </template>
         <!-- boatSearchResults goes here -->
         <!-- onloading={handleLoading} ondoneloading={handleDoneLoading} -->
       </lightning-layout-item>
