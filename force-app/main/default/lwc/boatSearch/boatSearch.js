@@ -15,13 +15,11 @@ export default class BoatSearch extends LightningElement {
     
     // Handles search boat event
     // This custom event comes from the form
-    searchBoats(event) { }
+    searchBoats(event) { 
+        console.log ('searchBoats:', event.detail.value);
+    }
     
     createNewBoat(event) { 
-        console.log ('NewBoat');
-        this.handleLoading();
-        setTimeout(() => {
-           this.handleDoneLoading();
-        }, 5000);
+        console.log ('createNewBoat');
     }
 }
