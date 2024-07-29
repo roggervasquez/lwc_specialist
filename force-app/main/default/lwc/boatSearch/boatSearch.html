@@ -3,11 +3,13 @@
       <!-- Top -->
       <lightning-layout-item size="12">
         <lightning-card title="Find a Boat">
-          <lightning-button label="New Boat" variant="brand" title="New Boat" onclick={createNewBoat}></lightning-button>
-          <p class="slds-var-p-horizontal_small">
+          <div class="slds-col slds-text-align_right">
+            <lightning-button label="New Boat" variant="brand" title="New Boat" onclick={createNewBoat}></lightning-button>
+         </div>
+         <div class="slds-var-p-horizontal_small">
             <!-- boatSearchForm component goes here -->
-             <c-boat-search-form onsearch={searchBoats}></c-boat-search-form>
-          </p>
+              <c-boat-search-form onsearch={searchBoats}> </c-boat-search-form>
+          </div>
         </lightning-card>
       </lightning-layout-item>
       <!-- Bottom -->
